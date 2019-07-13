@@ -1,6 +1,7 @@
 # Usage
 
 ```bash
+$ npm install
 $ node libwallabyDocScraper.js
 ```
 
