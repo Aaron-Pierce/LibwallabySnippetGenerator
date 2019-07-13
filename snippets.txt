@@ -1,0 +1,1452 @@
+"int accel_calibrate ": {
+"scope": "c",
+"prefix": "accel_calibrate",
+"body": "accel_calibrate()",
+"description": "Initiates a calibration of the accelerometer "
+},
+"signed short accel_x ": {
+"scope": "c",
+"prefix": "accel_x",
+"body": "accel_x()",
+"description": "Gets the sensed x acceleration  +/- 2G range, 1024 per G  This should be approximately 0 when at rest and flat on a table. "
+},
+"signed short accel_y ": {
+"scope": "c",
+"prefix": "accel_y",
+"body": "accel_y()",
+"description": "Gets the sensed y acceleration  +/- 2G range, 1024 per G  This should be approximately 0 when at rest and flat on a table. "
+},
+"signed short accel_z ": {
+"scope": "c",
+"prefix": "accel_z",
+"body": "accel_z()",
+"description": "Gets the sensed z acceleration  +/- 2G range, 1024 per G  This should be approximately -1024 when at rest and flat on a table. "
+},
+"int analog ": {
+"scope": "c",
+"prefix": "analog",
+"body": "analog(${1:port})",
+"description": "Gets the 12-bit analog value of a port. "
+},
+"int analog10 ": {
+"scope": "c",
+"prefix": "analog10",
+"body": "analog10(${1:port})",
+"description": "Gets the 10-bit analog value of a port. "
+},
+"int analog8 ": {
+"scope": "c",
+"prefix": "analog8",
+"body": "analog8(${1:port})",
+"description": "Gets the 8-bit analog value of a port. "
+},
+"int analog_et ": {
+"scope": "c",
+"prefix": "analog_et",
+"body": "analog_et(${1:port})",
+"description": "Gets the 10-bit analog value of an ET sensor on the given port. "
+},
+"int get_analog_pullup ": {
+"scope": "c",
+"prefix": "get_analog_pullup",
+"body": "get_analog_pullup(${1:port})",
+"description": "Gets the analog pullup status for one portt. "
+},
+"void set_analog_pullup ": {
+"scope": "c",
+"prefix": "set_analog_pullup",
+"body": "set_analog_pullup(${1:port}, ${2:pullup})",
+"description": "Sets analog pullup status for one port. "
+},
+"int battery_charging ": {
+"scope": "c",
+"prefix": "battery_charging",
+"body": "battery_charging()",
+"description": "Whether or not the battery is charging "
+},
+"float power_level ": {
+"scope": "c",
+"prefix": "power_level",
+"body": "power_level()",
+"description": "The device's power level "
+},
+"float power_level_life ": {
+"scope": "c",
+"prefix": "power_level_life",
+"body": "power_level_life()",
+"description": "The device's power level (LiFePO4 chemistry) "
+},
+"float power_level_lipo ": {
+"scope": "c",
+"prefix": "power_level_lipo",
+"body": "power_level_lipo()",
+"description": "The device's power level (LiPo chemistry) "
+},
+"float power_level_nimh ": {
+"scope": "c",
+"prefix": "power_level_nimh",
+"body": "power_level_nimh()",
+"description": "The device's power level (NiMH chemistry) "
+},
+"int a_button ": {
+"scope": "c",
+"prefix": "a_button",
+"body": "a_button()",
+"description": "Gets the A button's state (pressed or not pressed.) "
+},
+"int a_button_clicked ": {
+"scope": "c",
+"prefix": "a_button_clicked",
+"body": "a_button_clicked()",
+"description": "Gets the A button's state (pressed or not pressed.) "
+},
+"int any_button ": {
+"scope": "c",
+"prefix": "any_button",
+"body": "any_button()",
+"description": "Determines whether or not any of the buttons are pressed. "
+},
+"int b_button ": {
+"scope": "c",
+"prefix": "b_button",
+"body": "b_button()",
+"description": "Gets the B button's state (pressed or not pressed.) "
+},
+"int b_button_clicked ": {
+"scope": "c",
+"prefix": "b_button_clicked",
+"body": "b_button_clicked()",
+"description": "Gets the A button's state (pressed or not pressed.) "
+},
+"int black_button ": {
+"scope": "c",
+"prefix": "black_button",
+"body": "black_button()",
+"description": "Gets the black button's state (pressed or not pressed.) "
+},
+"int c_button ": {
+"scope": "c",
+"prefix": "c_button",
+"body": "c_button()",
+"description": "Gets the C button's state (pressed or not pressed.) "
+},
+"int c_button_clicked ": {
+"scope": "c",
+"prefix": "c_button_clicked",
+"body": "c_button_clicked()",
+"description": "Gets the B button's state (pressed or not pressed.) "
+},
+"void extra_buttons_hide ": {
+"scope": "c",
+"prefix": "extra_buttons_hide",
+"body": "extra_buttons_hide()",
+"description": "Hides the X, Y, and Z buttons. This is the default. "
+},
+"void extra_buttons_show ": {
+"scope": "c",
+"prefix": "extra_buttons_show",
+"body": "extra_buttons_show()",
+"description": "Shows the X, Y, and Z buttons. "
+},
+"int get_extra_buttons_visible ": {
+"scope": "c",
+"prefix": "get_extra_buttons_visible",
+"body": "get_extra_buttons_visible()",
+"description": "Determines whether or not the X, Y, and Z buttons are visible. "
+},
+"int left_button ": {
+"scope": "c",
+"prefix": "left_button",
+"body": "left_button()",
+"description": "Gets the left button's state (pressed or not pressed.) "
+},
+"int right_button ": {
+"scope": "c",
+"prefix": "right_button",
+"body": "right_button()",
+"description": "Gets the right button's state (pressed or not pressed.) "
+},
+"void set_a_button_text ": {
+"scope": "c",
+"prefix": "set_a_button_text",
+"body": "set_a_button_text(${1:text})",
+"description": "Updates the A button's text. "
+},
+"void set_b_button_text ": {
+"scope": "c",
+"prefix": "set_b_button_text",
+"body": "set_b_button_text(${1:text})",
+"description": "Updates the B button's text. "
+},
+"void set_c_button_text ": {
+"scope": "c",
+"prefix": "set_c_button_text",
+"body": "set_c_button_text(${1:text})",
+"description": "Updates the C button's text. "
+},
+"void set_extra_buttons_visible ": {
+"scope": "c",
+"prefix": "set_extra_buttons_visible",
+"body": "set_extra_buttons_visible(${1:visible})",
+"description": "Sets whether or not the X, Y, and Z buttons are visible. "
+},
+"void set_x_button_text ": {
+"scope": "c",
+"prefix": "set_x_button_text",
+"body": "set_x_button_text(${1:text})",
+"description": "Updates the X button's text. "
+},
+"void set_y_button_text ": {
+"scope": "c",
+"prefix": "set_y_button_text",
+"body": "set_y_button_text(${1:text})",
+"description": "Updates the Y button's text. "
+},
+"void set_z_button_text ": {
+"scope": "c",
+"prefix": "set_z_button_text",
+"body": "set_z_button_text(${1:text})",
+"description": "Updates the Z button's text. "
+},
+"int side_button ": {
+"scope": "c",
+"prefix": "side_button",
+"body": "side_button()",
+"description": "Gets the side button's state (pressed or not pressed.) "
+},
+"int side_button_clicked ": {
+"scope": "c",
+"prefix": "side_button_clicked",
+"body": "side_button_clicked()",
+"description": "Gets the Z button's state (pressed or not pressed.) "
+},
+"int x_button ": {
+"scope": "c",
+"prefix": "x_button",
+"body": "x_button()",
+"description": "Gets the C button's state (pressed or not pressed.) "
+},
+"int x_button_clicked ": {
+"scope": "c",
+"prefix": "x_button_clicked",
+"body": "x_button_clicked()",
+"description": "Gets the C button's state (pressed or not pressed.) "
+},
+"int y_button ": {
+"scope": "c",
+"prefix": "y_button",
+"body": "y_button()",
+"description": "Gets the Y button's state (pressed or not pressed.) "
+},
+"int y_button_clicked ": {
+"scope": "c",
+"prefix": "y_button_clicked",
+"body": "y_button_clicked()",
+"description": "Gets the X button's state (pressed or not pressed.) "
+},
+"int z_button ": {
+"scope": "c",
+"prefix": "z_button",
+"body": "z_button()",
+"description": "Gets the Z button's state (pressed or not pressed.) "
+},
+"int z_button_clicked ": {
+"scope": "c",
+"prefix": "z_button_clicked",
+"body": "z_button_clicked()",
+"description": "Gets the Y button's state (pressed or not pressed.) "
+},
+"void camera_close ": {
+"scope": "c",
+"prefix": "camera_close",
+"body": "camera_close()",
+"description": "Cleanup the current camera instance. "
+},
+"int camera_load_config ": {
+"scope": "c",
+"prefix": "camera_load_config",
+"body": "camera_load_config(${1:name})",
+"description": "Loads the config file specified by name. The system will look for the config in the base path. "
+},
+"int camera_open ": {
+"scope": "c",
+"prefix": "camera_open",
+"body": "camera_open()",
+"description": "Opens the default system camera for use at LOW_RES (160x120). "
+},
+"int camera_open_at_res ": {
+"scope": "c",
+"prefix": "camera_open_at_res",
+"body": "camera_open_at_res(${1:res})",
+"description": "Opens the default system camera for use at a given resolution. "
+},
+"int camera_open_black ": {
+"scope": "c",
+"prefix": "camera_open_black",
+"body": "camera_open_black()",
+"description": "Opens the default system camera for use at LOW_RES (160x120). This will improve frame rates for the black Logitech camera "
+},
+"int camera_open_device ": {
+"scope": "c",
+"prefix": "camera_open_device",
+"body": "camera_open_device(${1:number}, ${2:res})",
+"description": "Opens a camera for use. "
+},
+"int camera_open_device_model_at_res ": {
+"scope": "c",
+"prefix": "camera_open_device_model_at_res",
+"body": "camera_open_device_model_at_res(${1:number}, ${2:model}, ${3:res})",
+"description": "Opens a camera for use. "
+},
+"int camera_update ": {
+"scope": "c",
+"prefix": "camera_update",
+"body": "camera_update()",
+"description": "Pulls a new image from the camera for processing. "
+},
+"const unsigned char* get_camera_frame ": {
+"scope": "c",
+"prefix": "get_camera_frame",
+"body": "get_camera_frame()",
+"description": "Retrieves the current camera frame as a BGR (BGR888) array. The returned pointer is invalid after "
+},
+"const unsigned char* get_camera_frame_row ": {
+"scope": "c",
+"prefix": "get_camera_frame_row",
+"body": "get_camera_frame_row(${1:row})",
+"description": "Retrieves the current camera frame row as a BGR (BGR888) array. The returned pointer is invalid after "
+},
+"int get_camera_height ": {
+"scope": "c",
+"prefix": "get_camera_height",
+"body": "get_camera_height()",
+"description": "Gets the camera's y resolution. "
+},
+"pixel get_camera_pixel ": {
+"scope": "c",
+"prefix": "get_camera_pixel",
+"body": "get_camera_pixel(${1:p})",
+"description": "Gets the color of a pixel. "
+},
+"int get_camera_width ": {
+"scope": "c",
+"prefix": "get_camera_width",
+"body": "get_camera_width()",
+"description": "Gets the camera's x resolution. "
+},
+"int get_channel_count ": {
+"scope": "c",
+"prefix": "get_channel_count",
+"body": "get_channel_count()",
+"description": ""
+},
+"int get_object_area ": {
+"scope": "c",
+"prefix": "get_object_area",
+"body": "get_object_area(${1:channel}, ${2:object})",
+"description": ""
+},
+"rectangle get_object_bbox ": {
+"scope": "c",
+"prefix": "get_object_bbox",
+"body": "get_object_bbox(${1:channel}, ${2:object})",
+"description": ""
+},
+"point2 get_object_center ": {
+"scope": "c",
+"prefix": "get_object_center",
+"body": "get_object_center(${1:channel}, ${2:object})",
+"description": ""
+},
+"point2 get_object_centroid ": {
+"scope": "c",
+"prefix": "get_object_centroid",
+"body": "get_object_centroid(${1:channel}, ${2:object})",
+"description": ""
+},
+"double get_object_confidence ": {
+"scope": "c",
+"prefix": "get_object_confidence",
+"body": "get_object_confidence(${1:channel}, ${2:object})",
+"description": ""
+},
+"int get_object_count ": {
+"scope": "c",
+"prefix": "get_object_count",
+"body": "get_object_count(${1:channel})",
+"description": ""
+},
+"const char* get_object_data ": {
+"scope": "c",
+"prefix": "get_object_data",
+"body": "get_object_data(${1:channel}, ${2:object})",
+"description": ""
+},
+"int get_object_data_length ": {
+"scope": "c",
+"prefix": "get_object_data_length",
+"body": "get_object_data_length(${1:channel}, ${2:object})",
+"description": ""
+},
+"void set_camera_config_base_path ": {
+"scope": "c",
+"prefix": "set_camera_config_base_path",
+"body": "set_camera_config_base_path(${1:path})",
+"description": "Sets the path in which to look for camera configurations. "
+},
+"void set_camera_height ": {
+"scope": "c",
+"prefix": "set_camera_height",
+"body": "set_camera_height(${1:height})",
+"description": "Sets the camera's y resolution. "
+},
+"void set_camera_width ": {
+"scope": "c",
+"prefix": "set_camera_width",
+"body": "set_camera_width(${1:width})",
+"description": "Sets the camera's x resolution. "
+},
+"void calibrate_compass ": {
+"scope": "c",
+"prefix": "calibrate_compass",
+"body": "calibrate_compass()",
+"description": "Provided by Dr. Andrew H. Fagg and Twister Robotics "
+},
+"float get_compass_angle ": {
+"scope": "c",
+"prefix": "get_compass_angle",
+"body": "get_compass_angle()",
+"description": "Provided by Dr. Andrew H. Fagg and Twister Robotics "
+},
+"void set_compass_params ": {
+"scope": "c",
+"prefix": "set_compass_params",
+"body": "set_compass_params(${1:meanX}, ${2:meanY}, ${3:meanZ}, ${4:W1}, ${5:W2}, ${6:div_E1}, ${7:div_E2})",
+"description": "Provided by Dr. Andrew H. Fagg and Twister Robotics"
+},
+" void console_clear ": {
+"scope": "c",
+"prefix": "console_clear",
+"body": "console_clear()",
+"description": "Clears the UI's console. "
+},
+" int _create_get_raw_encoders ": {
+"scope": "c",
+"prefix": "_create_get_raw_encoders",
+"body": "_create_get_raw_encoders(${1:lenc}, ${2:renc})",
+"description": ""
+},
+" void create_advance_led ": {
+"scope": "c",
+"prefix": "create_advance_led",
+"body": "create_advance_led(${1:on})",
+"description": ""
+},
+" void create_clear_serial_buffer ": {
+"scope": "c",
+"prefix": "create_clear_serial_buffer",
+"body": "create_clear_serial_buffer()",
+"description": ""
+},
+" int create_connect ": {
+"scope": "c",
+"prefix": "create_connect",
+"body": "create_connect()",
+"description": "Waits to establish a connection to the create. "
+},
+" int create_connect_once ": {
+"scope": "c",
+"prefix": "create_connect_once",
+"body": "create_connect_once()",
+"description": "Attempts to establish a connection to the create. "
+},
+" void create_cover ": {
+"scope": "c",
+"prefix": "create_cover",
+"body": "create_cover()",
+"description": ""
+},
+" void create_cover_dock ": {
+"scope": "c",
+"prefix": "create_cover_dock",
+"body": "create_cover_dock()",
+"description": ""
+},
+" void create_demo ": {
+"scope": "c",
+"prefix": "create_demo",
+"body": "create_demo(${1:d})",
+"description": ""
+},
+" void create_digital_output ": {
+"scope": "c",
+"prefix": "create_digital_output",
+"body": "create_digital_output(${1:bits})",
+"description": ""
+},
+" void create_disconnect ": {
+"scope": "c",
+"prefix": "create_disconnect",
+"body": "create_disconnect()",
+"description": "Cleans up connection to the create. "
+},
+" void create_drive ": {
+"scope": "c",
+"prefix": "create_drive",
+"body": "create_drive(${1:speed}, ${2:radius})",
+"description": ""
+},
+" void create_drive_direct ": {
+"scope": "c",
+"prefix": "create_drive_direct",
+"body": "create_drive_direct(${1:l_speed}, ${2:r_speed})",
+"description": ""
+},
+" void create_drive_straight ": {
+"scope": "c",
+"prefix": "create_drive_straight",
+"body": "create_drive_straight(${1:speed})",
+"description": ""
+},
+" void create_full ": {
+"scope": "c",
+"prefix": "create_full",
+"body": "create_full()",
+"description": ""
+},
+" void create_load_song ": {
+"scope": "c",
+"prefix": "create_load_song",
+"body": "create_load_song(${1:num})",
+"description": ""
+},
+" void create_low_side_drivers ": {
+"scope": "c",
+"prefix": "create_low_side_drivers",
+"body": "create_low_side_drivers(${1:pwm2}, ${2:pwm1}, ${3:pwm0})",
+"description": ""
+},
+" void create_passive ": {
+"scope": "c",
+"prefix": "create_passive",
+"body": "create_passive()",
+"description": ""
+},
+" void create_play_led ": {
+"scope": "c",
+"prefix": "create_play_led",
+"body": "create_play_led(${1:on})",
+"description": ""
+},
+" void create_play_song ": {
+"scope": "c",
+"prefix": "create_play_song",
+"body": "create_play_song(${1:num})",
+"description": ""
+},
+" void create_power_led ": {
+"scope": "c",
+"prefix": "create_power_led",
+"body": "create_power_led(${1:color}, ${2:brightness})",
+"description": ""
+},
+" void create_pwm_low_side_drivers ": {
+"scope": "c",
+"prefix": "create_pwm_low_side_drivers",
+"body": "create_pwm_low_side_drivers(${1:pwm2}, ${2:pwm1}, ${3:pwm0})",
+"description": ""
+},
+" int create_read_block ": {
+"scope": "c",
+"prefix": "create_read_block",
+"body": "create_read_block(${1:data}, ${2:count})",
+"description": ""
+},
+" void create_safe ": {
+"scope": "c",
+"prefix": "create_safe",
+"body": "create_safe()",
+"description": ""
+},
+" void create_spin_block ": {
+"scope": "c",
+"prefix": "create_spin_block",
+"body": "create_spin_block(${1:speed}, ${2:angle})",
+"description": ""
+},
+" void create_spin_CCW ": {
+"scope": "c",
+"prefix": "create_spin_CCW",
+"body": "create_spin_CCW(${1:speed})",
+"description": ""
+},
+" void create_spin_CW ": {
+"scope": "c",
+"prefix": "create_spin_CW",
+"body": "create_spin_CW(${1:speed})",
+"description": ""
+},
+" void create_spot ": {
+"scope": "c",
+"prefix": "create_spot",
+"body": "create_spot()",
+"description": ""
+},
+" void create_start ": {
+"scope": "c",
+"prefix": "create_start",
+"body": "create_start()",
+"description": ""
+},
+" void create_stop ": {
+"scope": "c",
+"prefix": "create_stop",
+"body": "create_stop()",
+"description": ""
+},
+" void create_write_byte ": {
+"scope": "c",
+"prefix": "create_write_byte",
+"body": "create_write_byte(${1:byte})",
+"description": ""
+},
+" int get_create_advance_button ": {
+"scope": "c",
+"prefix": "get_create_advance_button",
+"body": "get_create_advance_button()",
+"description": ""
+},
+" int get_create_battery_capacity ": {
+"scope": "c",
+"prefix": "get_create_battery_capacity",
+"body": "get_create_battery_capacity()",
+"description": ""
+},
+" int get_create_battery_charge ": {
+"scope": "c",
+"prefix": "get_create_battery_charge",
+"body": "get_create_battery_charge()",
+"description": ""
+},
+" int get_create_battery_charging_state ": {
+"scope": "c",
+"prefix": "get_create_battery_charging_state",
+"body": "get_create_battery_charging_state()",
+"description": ""
+},
+" int get_create_battery_current ": {
+"scope": "c",
+"prefix": "get_create_battery_current",
+"body": "get_create_battery_current()",
+"description": ""
+},
+" int get_create_battery_temp ": {
+"scope": "c",
+"prefix": "get_create_battery_temp",
+"body": "get_create_battery_temp()",
+"description": ""
+},
+" int get_create_battery_voltage ": {
+"scope": "c",
+"prefix": "get_create_battery_voltage",
+"body": "get_create_battery_voltage()",
+"description": ""
+},
+" get_create_baud_rate ": {
+"scope": "c",
+"prefix": "get_create_baud_rate",
+"body": "get_create_baud_rate()",
+"description": ""
+},
+" int get_create_bay_AI ": {
+"scope": "c",
+"prefix": "get_create_bay_AI",
+"body": "get_create_bay_AI()",
+"description": ""
+},
+" int get_create_bay_DI ": {
+"scope": "c",
+"prefix": "get_create_bay_DI",
+"body": "get_create_bay_DI()",
+"description": ""
+},
+" int get_create_cwdrop ": {
+"scope": "c",
+"prefix": "get_create_cwdrop",
+"body": "get_create_cwdrop()",
+"description": ""
+},
+" int get_create_distance ": {
+"scope": "c",
+"prefix": "get_create_distance",
+"body": "get_create_distance()",
+"description": ""
+},
+" int get_create_infrared ": {
+"scope": "c",
+"prefix": "get_create_infrared",
+"body": "get_create_infrared()",
+"description": ""
+},
+" int get_create_lbump ": {
+"scope": "c",
+"prefix": "get_create_lbump",
+"body": "get_create_lbump()",
+"description": ""
+},
+" int get_create_lcliff ": {
+"scope": "c",
+"prefix": "get_create_lcliff",
+"body": "get_create_lcliff()",
+"description": ""
+},
+" int get_create_lcliff_amt ": {
+"scope": "c",
+"prefix": "get_create_lcliff_amt",
+"body": "get_create_lcliff_amt()",
+"description": ""
+},
+" int get_create_lclightbump ": {
+"scope": "c",
+"prefix": "get_create_lclightbump",
+"body": "get_create_lclightbump()",
+"description": ""
+},
+" int get_create_lclightbump_amt ": {
+"scope": "c",
+"prefix": "get_create_lclightbump_amt",
+"body": "get_create_lclightbump_amt()",
+"description": ""
+},
+" int get_create_lfcliff ": {
+"scope": "c",
+"prefix": "get_create_lfcliff",
+"body": "get_create_lfcliff()",
+"description": ""
+},
+" int get_create_lfcliff_amt ": {
+"scope": "c",
+"prefix": "get_create_lfcliff_amt",
+"body": "get_create_lfcliff_amt()",
+"description": ""
+},
+" int get_create_lflightbump ": {
+"scope": "c",
+"prefix": "get_create_lflightbump",
+"body": "get_create_lflightbump()",
+"description": ""
+},
+" int get_create_lflightbump_amt ": {
+"scope": "c",
+"prefix": "get_create_lflightbump_amt",
+"body": "get_create_lflightbump_amt()",
+"description": ""
+},
+" int get_create_llightbump ": {
+"scope": "c",
+"prefix": "get_create_llightbump",
+"body": "get_create_llightbump()",
+"description": ""
+},
+" int get_create_llightbump_amt ": {
+"scope": "c",
+"prefix": "get_create_llightbump_amt",
+"body": "get_create_llightbump_amt()",
+"description": ""
+},
+" int get_create_lwdrop ": {
+"scope": "c",
+"prefix": "get_create_lwdrop",
+"body": "get_create_lwdrop()",
+"description": ""
+},
+" int get_create_mode ": {
+"scope": "c",
+"prefix": "get_create_mode",
+"body": "get_create_mode()",
+"description": ""
+},
+" int get_create_normalized_angle ": {
+"scope": "c",
+"prefix": "get_create_normalized_angle",
+"body": "get_create_normalized_angle()",
+"description": ""
+},
+" int get_create_number_of_stream_packets ": {
+"scope": "c",
+"prefix": "get_create_number_of_stream_packets",
+"body": "get_create_number_of_stream_packets()",
+"description": ""
+},
+" int get_create_overcurrents ": {
+"scope": "c",
+"prefix": "get_create_overcurrents",
+"body": "get_create_overcurrents()",
+"description": ""
+},
+" int get_create_play_button ": {
+"scope": "c",
+"prefix": "get_create_play_button",
+"body": "get_create_play_button()",
+"description": ""
+},
+" int get_create_rbump ": {
+"scope": "c",
+"prefix": "get_create_rbump",
+"body": "get_create_rbump()",
+"description": ""
+},
+" int get_create_rcliff ": {
+"scope": "c",
+"prefix": "get_create_rcliff",
+"body": "get_create_rcliff()",
+"description": ""
+},
+" int get_create_rcliff_amt ": {
+"scope": "c",
+"prefix": "get_create_rcliff_amt",
+"body": "get_create_rcliff_amt()",
+"description": ""
+},
+" int get_create_rclightbump ": {
+"scope": "c",
+"prefix": "get_create_rclightbump",
+"body": "get_create_rclightbump()",
+"description": ""
+},
+" int get_create_rclightbump_amt ": {
+"scope": "c",
+"prefix": "get_create_rclightbump_amt",
+"body": "get_create_rclightbump_amt()",
+"description": ""
+},
+" int get_create_requested_left_velocity ": {
+"scope": "c",
+"prefix": "get_create_requested_left_velocity",
+"body": "get_create_requested_left_velocity()",
+"description": ""
+},
+" int get_create_requested_radius ": {
+"scope": "c",
+"prefix": "get_create_requested_radius",
+"body": "get_create_requested_radius()",
+"description": ""
+},
+" int get_create_requested_right_velocity ": {
+"scope": "c",
+"prefix": "get_create_requested_right_velocity",
+"body": "get_create_requested_right_velocity()",
+"description": ""
+},
+" int get_create_requested_velocity ": {
+"scope": "c",
+"prefix": "get_create_requested_velocity",
+"body": "get_create_requested_velocity()",
+"description": ""
+},
+" int get_create_rfcliff ": {
+"scope": "c",
+"prefix": "get_create_rfcliff",
+"body": "get_create_rfcliff()",
+"description": ""
+},
+" int get_create_rfcliff_amt ": {
+"scope": "c",
+"prefix": "get_create_rfcliff_amt",
+"body": "get_create_rfcliff_amt()",
+"description": ""
+},
+" int get_create_rflightbump ": {
+"scope": "c",
+"prefix": "get_create_rflightbump",
+"body": "get_create_rflightbump()",
+"description": ""
+},
+" int get_create_rflightbump_amt ": {
+"scope": "c",
+"prefix": "get_create_rflightbump_amt",
+"body": "get_create_rflightbump_amt()",
+"description": ""
+},
+" int get_create_rlightbump ": {
+"scope": "c",
+"prefix": "get_create_rlightbump",
+"body": "get_create_rlightbump()",
+"description": ""
+},
+" int get_create_rlightbump_amt ": {
+"scope": "c",
+"prefix": "get_create_rlightbump_amt",
+"body": "get_create_rlightbump_amt()",
+"description": ""
+},
+" int get_create_rwdrop ": {
+"scope": "c",
+"prefix": "get_create_rwdrop",
+"body": "get_create_rwdrop()",
+"description": ""
+},
+" int get_create_song_number ": {
+"scope": "c",
+"prefix": "get_create_song_number",
+"body": "get_create_song_number()",
+"description": ""
+},
+" int get_create_song_playing ": {
+"scope": "c",
+"prefix": "get_create_song_playing",
+"body": "get_create_song_playing()",
+"description": ""
+},
+" int get_create_total_angle ": {
+"scope": "c",
+"prefix": "get_create_total_angle",
+"body": "get_create_total_angle()",
+"description": ""
+},
+" int get_create_vwall ": {
+"scope": "c",
+"prefix": "get_create_vwall",
+"body": "get_create_vwall()",
+"description": ""
+},
+" int get_create_wall ": {
+"scope": "c",
+"prefix": "get_create_wall",
+"body": "get_create_wall()",
+"description": ""
+},
+" int get_create_wall_amt ": {
+"scope": "c",
+"prefix": "get_create_wall_amt",
+"body": "get_create_wall_amt()",
+"description": ""
+},
+" void set_create_baud_rate ": {
+"scope": "c",
+"prefix": "set_create_baud_rate",
+"body": "set_create_baud_rate(${1:baudRate})",
+"description": ""
+},
+" void set_create_distance ": {
+"scope": "c",
+"prefix": "set_create_distance",
+"body": "set_create_distance(${1:dist})",
+"description": ""
+},
+" void set_create_normalized_angle ": {
+"scope": "c",
+"prefix": "set_create_normalized_angle",
+"body": "set_create_normalized_angle(${1:angle})",
+"description": ""
+},
+" void set_create_total_angle ": {
+"scope": "c",
+"prefix": "set_create_total_angle",
+"body": "set_create_total_angle(${1:angle})",
+"description": ""
+},
+"int digital ": {
+"scope": "c",
+"prefix": "digital",
+"body": "digital(${1:port})",
+"description": ""
+},
+"int get_digital_output ": {
+"scope": "c",
+"prefix": "get_digital_output",
+"body": "get_digital_output(${1:port})",
+"description": "Gets the current digital mode "
+},
+"int get_digital_pullup ": {
+"scope": "c",
+"prefix": "get_digital_pullup",
+"body": "get_digital_pullup(${1:port})",
+"description": "Gets the current digital pullup state "
+},
+"int get_digital_value ": {
+"scope": "c",
+"prefix": "get_digital_value",
+"body": "get_digital_value(${1:port})",
+"description": "Gets the current value of the digital port. "
+},
+"void set_digital_output ": {
+"scope": "c",
+"prefix": "set_digital_output",
+"body": "set_digital_output(${1:port}, ${2:out})",
+"description": "Sets the digital mode. "
+},
+"void set_digital_pullup ": {
+"scope": "c",
+"prefix": "set_digital_pullup",
+"body": "set_digital_pullup(${1:port}, ${2:pullup})",
+"description": "Sets the current digital pullup state "
+},
+"void set_digital_value ": {
+"scope": "c",
+"prefix": "set_digital_value",
+"body": "set_digital_value(${1:port}, ${2:value})",
+"description": "Sets the value of the digital port in output mode. "
+},
+" void publish ": {
+"scope": "c",
+"prefix": "publish",
+"body": "publish()",
+"description": "All hardware output commands are stored locally before being written to the system. This allows for batch execution of commands with automatic publishing turned off."
+},
+" void set_auto_publish ": {
+"scope": "c",
+"prefix": "set_auto_publish",
+"body": "set_auto_publish(${1:on})",
+"description": "undefined"
+},
+" int get_key_state ": {
+"scope": "c",
+"prefix": "get_key_state",
+"body": "get_key_state(${1:key})",
+"description": "Gets the current state of a keyboard key."
+},
+" int get_mouse_left_button ": {
+"scope": "c",
+"prefix": "get_mouse_left_button",
+"body": "get_mouse_left_button()",
+"description": "Returns the state of the mouse's left button. "
+},
+" int get_mouse_middle_button ": {
+"scope": "c",
+"prefix": "get_mouse_middle_button",
+"body": "get_mouse_middle_button()",
+"description": "Returns the state of the mouse's middle button. "
+},
+" void get_mouse_position ": {
+"scope": "c",
+"prefix": "get_mouse_position",
+"body": "get_mouse_position(${1:x}, ${2:y})",
+"description": "Returns the mouse's current position relative to the top left corner of the graphics window. "
+},
+" int get_mouse_right_button ": {
+"scope": "c",
+"prefix": "get_mouse_right_button",
+"body": "get_mouse_right_button()",
+"description": "Returns the state of the mouse's right button. "
+},
+" void graphics_blit_enc ": {
+"scope": "c",
+"prefix": "graphics_blit_enc",
+"body": "graphics_blit_enc(${1:data}, ${2:enc}, ${3:x}, ${4:y}, ${5:width}, ${6:height})",
+"description": "Blits a pixel array onto the graphics context"
+},
+" void graphics_blit_region_enc ": {
+"scope": "c",
+"prefix": "graphics_blit_region_enc",
+"body": "graphics_blit_region_enc(${1:data}, ${2:enc}, ${3:sx}, ${4:sy}, ${5:ex}, ${6:ey}, ${7:width}, ${8:height}, ${9:dx}, ${10:dy})",
+"description": "Blits a pixel array region onto the graphics context"
+},
+" void graphics_circle ": {
+"scope": "c",
+"prefix": "graphics_circle",
+"body": "graphics_circle(${1:cx}, ${2:cy}, ${3:radius}, ${4:r}, ${5:g}, ${6:b})",
+"description": "Draw an unfilled circle to the graphics window at the given coordinates and with the given radius. "
+},
+" void graphics_circle_fill ": {
+"scope": "c",
+"prefix": "graphics_circle_fill",
+"body": "graphics_circle_fill(${1:cx}, ${2:cy}, ${3:radius}, ${4:r}, ${5:g}, ${6:b})",
+"description": "Draw a filled circle to the graphics window at the given coordinates and with the given radius. "
+},
+" void graphics_clear ": {
+"scope": "c",
+"prefix": "graphics_clear",
+"body": "graphics_clear()",
+"description": "Fills the entire window with the color black "
+},
+" void graphics_close ": {
+"scope": "c",
+"prefix": "graphics_close",
+"body": "graphics_close()",
+"description": "Closes the previously opened KISS Graphics Window "
+},
+" void graphics_fill ": {
+"scope": "c",
+"prefix": "graphics_fill",
+"body": "graphics_fill(${1:r}, ${2:g}, ${3:b})",
+"description": "Fill the graphics context with a color. "
+},
+" void graphics_line ": {
+"scope": "c",
+"prefix": "graphics_line",
+"body": "graphics_line(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2}, ${5:r}, ${6:g}, ${7:b})",
+"description": "Draw a line from the point (x1, y1) to (x2, y2) "
+},
+" int graphics_open ": {
+"scope": "c",
+"prefix": "graphics_open",
+"body": "graphics_open(${1:width}, ${2:height})",
+"description": "Opens a KISS Graphics Window for drawing and input functions."
+},
+" void graphics_pixel ": {
+"scope": "c",
+"prefix": "graphics_pixel",
+"body": "graphics_pixel(${1:x}, ${2:y}, ${3:r}, ${4:g}, ${5:b})",
+"description": "Draw a pixel at (x, y) "
+},
+"void graphics_printCharacter ": {
+"scope": "c",
+"prefix": "graphics_printCharacter",
+"body": "graphics_printCharacter(${1:n}, ${2:x}, ${3:y}, ${4:r}, ${5:g}, ${6:b}, ${7:size})",
+"description": "Prints out a character in 16 segment characters"
+},
+"void graphics_printFloat ": {
+"scope": "c",
+"prefix": "graphics_printFloat",
+"body": "graphics_printFloat(${1:n}, ${2:numDigits}, ${3:x}, ${4:y}, ${5:r}, ${6:g}, ${7:b}, ${8:size})",
+"description": "Prints out a float in 16 segment characters"
+},
+"int graphics_printInt ": {
+"scope": "c",
+"prefix": "graphics_printInt",
+"body": "graphics_printInt(${1:n}, ${2:minNumDigits}, ${3:x}, ${4:y}, ${5:r}, ${6:g}, ${7:b}, ${8:size})",
+"description": "Prints out an integer in 16 segment characters"
+},
+"void graphics_printString ": {
+"scope": "c",
+"prefix": "graphics_printString",
+"body": "graphics_printString(${1:s}, ${2:x}, ${3:y}, ${4:r}, ${5:g}, ${6:b}, ${7:size})",
+"description": "Prints out a text string in 16 segment characters"
+},
+" void graphics_rectangle ": {
+"scope": "c",
+"prefix": "graphics_rectangle",
+"body": "graphics_rectangle(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2}, ${5:r}, ${6:g}, ${7:b})",
+"description": "Draw an unfilled rectangle to the graphics window at the given coordinates. "
+},
+" void graphics_rectangle_fill ": {
+"scope": "c",
+"prefix": "graphics_rectangle_fill",
+"body": "graphics_rectangle_fill(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2}, ${5:r}, ${6:g}, ${7:b})",
+"description": "Draw a filled rectangle to the graphics window at the given coordinates. "
+},
+"void graphics_segmentDisplay ": {
+"scope": "c",
+"prefix": "graphics_segmentDisplay",
+"body": "graphics_segmentDisplay(${1:s}, ${2:x}, ${3:y}, ${4:r}, ${5:g}, ${6:b}, ${7:size})",
+"description": "Draw a 16 segment character (alphameric - caps only)"
+},
+" void graphics_triangle ": {
+"scope": "c",
+"prefix": "graphics_triangle",
+"body": "graphics_triangle(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2}, ${5:x3}, ${6:y3}, ${7:r}, ${8:g}, ${9:b})",
+"description": "Draw an unfilled triangle to the graphics window at the given coordinates. "
+},
+" void graphics_triangle_fill ": {
+"scope": "c",
+"prefix": "graphics_triangle_fill",
+"body": "graphics_triangle_fill(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2}, ${5:x3}, ${6:y3}, ${7:r}, ${8:g}, ${9:b})",
+"description": "Draw a filled triangle to the graphics window at the given coordinates. "
+},
+" void graphics_update ": {
+"scope": "c",
+"prefix": "graphics_update",
+"body": "graphics_update()",
+"description": "Update must be called after drawing to the window for changes to be visible. This function also must be called regularly for input to work. "
+},
+"int gyro_calibrate ": {
+"scope": "c",
+"prefix": "gyro_calibrate",
+"body": "gyro_calibrate()",
+"description": "Initiates a calibration of the gyrometer "
+},
+"signed short gyro_x ": {
+"scope": "c",
+"prefix": "gyro_x",
+"body": "gyro_x()",
+"description": "Gets the sensed x rotation "
+},
+"signed short gyro_y ": {
+"scope": "c",
+"prefix": "gyro_y",
+"body": "gyro_y()",
+"description": "Gets the sensed y rotation "
+},
+"signed short gyro_z ": {
+"scope": "c",
+"prefix": "gyro_z",
+"body": "gyro_z()",
+"description": "Gets the sensed z rotation "
+},
+"int magneto_calibrate ": {
+"scope": "c",
+"prefix": "magneto_calibrate",
+"body": "magneto_calibrate()",
+"description": "Initiates a calibration of the magnetometer "
+},
+"signed short magneto_x ": {
+"scope": "c",
+"prefix": "magneto_x",
+"body": "magneto_x()",
+"description": "Gets the sensed x magneto value "
+},
+"signed short magneto_y ": {
+"scope": "c",
+"prefix": "magneto_y",
+"body": "magneto_y()",
+"description": "Gets the sensed x magneto value "
+},
+"signed short magneto_z ": {
+"scope": "c",
+"prefix": "magneto_z",
+"body": "magneto_z()",
+"description": "Gets the sensed x magneto value "
+},
+"void alloff ": {
+"scope": "c",
+"prefix": "alloff",
+"body": "alloff()",
+"description": "Turns all motors off. "
+},
+"void ao ": {
+"scope": "c",
+"prefix": "ao",
+"body": "ao()",
+"description": "Turns all motors off. "
+},
+"void bk ": {
+"scope": "c",
+"prefix": "bk",
+"body": "bk(${1:motor})",
+"description": "Moves the given motor backward at full power. "
+},
+"void block_motor_done ": {
+"scope": "c",
+"prefix": "block_motor_done",
+"body": "block_motor_done(${1:motor})",
+"description": "Wait until the motor is at it's goal. "
+},
+"void bmd ": {
+"scope": "c",
+"prefix": "bmd",
+"body": "bmd(${1:motor})",
+"description": "Wait until the motor is at it's goal. "
+},
+"void clear_motor_position_counter ": {
+"scope": "c",
+"prefix": "clear_motor_position_counter",
+"body": "clear_motor_position_counter(${1:motor})",
+"description": "Clears the motor position counter. "
+},
+"void cmpc ": {
+"scope": "c",
+"prefix": "cmpc",
+"body": "cmpc(${1:motor})",
+"description": "Clears the motor position counter. "
+},
+"void fd ": {
+"scope": "c",
+"prefix": "fd",
+"body": "fd(${1:motor})",
+"description": "Moves the given motor forward at full power. "
+},
+"int freeze ": {
+"scope": "c",
+"prefix": "freeze",
+"body": "freeze(${1:motor})",
+"description": "Active braking to stop a motor. "
+},
+"int get_motor_done ": {
+"scope": "c",
+"prefix": "get_motor_done",
+"body": "get_motor_done(${1:motor})",
+"description": "Check if the motor has reached it's goal. "
+},
+"int get_motor_position_counter ": {
+"scope": "c",
+"prefix": "get_motor_position_counter",
+"body": "get_motor_position_counter(${1:motor})",
+"description": "Gets the current motor position. "
+},
+"void get_pid_gains ": {
+"scope": "c",
+"prefix": "get_pid_gains",
+"body": "get_pid_gains(${1:motor}, ${2:p}, ${3:i}, ${4:d}, ${5:pd}, ${6:id}, ${7:dd})",
+"description": "Set the motor PID gains, represented as fractions. "
+},
+"int getpwm ": {
+"scope": "c",
+"prefix": "getpwm",
+"body": "getpwm(${1:motor})",
+"description": "Get the current motor pwm command. "
+},
+"int gmpc ": {
+"scope": "c",
+"prefix": "gmpc",
+"body": "gmpc(${1:motor})",
+"description": "Gets the current motor position. "
+},
+"int mav ": {
+"scope": "c",
+"prefix": "mav",
+"body": "mav(${1:motor}, ${2:velocity})",
+"description": "Set a goal velocity in ticks per second. "
+},
+"void motor ": {
+"scope": "c",
+"prefix": "motor",
+"body": "motor(${1:motor}, ${2:percent})",
+"description": "Moves a motor at a percent velocity. "
+},
+"void motor_power ": {
+"scope": "c",
+"prefix": "motor_power",
+"body": "motor_power(${1:motor}, ${2:percent})",
+"description": "Moves a motor at a percent power. "
+},
+"int move_at_velocity ": {
+"scope": "c",
+"prefix": "move_at_velocity",
+"body": "move_at_velocity(${1:motor}, ${2:velocity})",
+"description": "Set a goal velocity in ticks per second.  The range is -1500 to 1500, though motor position accuracy may be decreased outside of -1000 to 1000. "
+},
+"int move_relative_position ": {
+"scope": "c",
+"prefix": "move_relative_position",
+"body": "move_relative_position(${1:motor}, ${2:speed}, ${3:delta_pos})",
+"description": "Set a goal position (in ticks) for the motor to move to, relative to the current position. "
+},
+"int move_to_position ": {
+"scope": "c",
+"prefix": "move_to_position",
+"body": "move_to_position(${1:motor}, ${2:speed}, ${3:goal_pos})",
+"description": "Set a goal position (in ticks) for the motor to move to.  There are approximately 1500 ticks per motor revolution.  This function is more accurate if speeds between -1000 and 1000 are used. "
+},
+"int mrp ": {
+"scope": "c",
+"prefix": "mrp",
+"body": "mrp(${1:motor}, ${2:speed}, ${3:delta_pos})",
+"description": "Set a goal position (in ticks) for the motor to move to, relative to the current position. "
+},
+"int mtp ": {
+"scope": "c",
+"prefix": "mtp",
+"body": "mtp(${1:motor}, ${2:speed}, ${3:goal_pos})",
+"description": "Set a goal position (in ticks) for the motor to move to. "
+},
+"void off ": {
+"scope": "c",
+"prefix": "off",
+"body": "off(${1:motor})",
+"description": "Turns the specified motor off. "
+},
+"void set_pid_gains ": {
+"scope": "c",
+"prefix": "set_pid_gains",
+"body": "set_pid_gains(${1:motor}, ${2:p}, ${3:i}, ${4:d}, ${5:pd}, ${6:id}, ${7:dd})",
+"description": "Set the motor PID gains, represented as fractions. "
+},
+"int setpwm ": {
+"scope": "c",
+"prefix": "setpwm",
+"body": "setpwm(${1:motor}, ${2:pwm})",
+"description": "Set the motor pwm (percent power) command. "
+},
+"void disable_servo ": {
+"scope": "c",
+"prefix": "disable_servo",
+"body": "disable_servo(${1:port})",
+"description": "Disable a specific servo. "
+},
+"void disable_servos ": {
+"scope": "c",
+"prefix": "disable_servos",
+"body": "disable_servos()",
+"description": "Disable all four servo channels. "
+},
+"void enable_servo ": {
+"scope": "c",
+"prefix": "enable_servo",
+"body": "enable_servo(${1:port})",
+"description": "Enable a specific servo. "
+},
+"void enable_servos ": {
+"scope": "c",
+"prefix": "enable_servos",
+"body": "enable_servos()",
+"description": "Enable all four servo channels. "
+},
+"int get_servo_enabled ": {
+"scope": "c",
+"prefix": "get_servo_enabled",
+"body": "get_servo_enabled(${1:port})",
+"description": "Check if a servo is enabled. "
+},
+"int get_servo_position ": {
+"scope": "c",
+"prefix": "get_servo_position",
+"body": "get_servo_position(${1:port})",
+"description": "Get the most recent commanded servo position. "
+},
+"void set_servo_enabled ": {
+"scope": "c",
+"prefix": "set_servo_enabled",
+"body": "set_servo_enabled(${1:port}, ${2:enabled})",
+"description": "Enable or disable a specific servo. "
+},
+"void set_servo_position ": {
+"scope": "c",
+"prefix": "set_servo_position",
+"body": "set_servo_position(${1:port}, ${2:position})",
+"description": "Set a new servo goal position. "
+},
+" mutex_create ": {
+"scope": "c",
+"prefix": "mutex_create",
+"body": "mutex_create()",
+"description": ""
+},
+" void mutex_destroy ": {
+"scope": "c",
+"prefix": "mutex_destroy",
+"body": "mutex_destroy(${1:m})",
+"description": ""
+},
+" void mutex_lock ": {
+"scope": "c",
+"prefix": "mutex_lock",
+"body": "mutex_lock(${1:m})",
+"description": ""
+},
+" int mutex_trylock ": {
+"scope": "c",
+"prefix": "mutex_trylock",
+"body": "mutex_trylock(${1:m})",
+"description": ""
+},
+" void mutex_unlock ": {
+"scope": "c",
+"prefix": "mutex_unlock",
+"body": "mutex_unlock(${1:m})",
+"description": ""
+},
+" thread_create ": {
+"scope": "c",
+"prefix": "thread_create",
+"body": "thread_create(${1:func})",
+"description": ""
+},
+" void thread_destroy ": {
+"scope": "c",
+"prefix": "thread_destroy",
+"body": "thread_destroy(${1:id})",
+"description": ""
+},
+" void thread_start ": {
+"scope": "c",
+"prefix": "thread_start",
+"body": "thread_start(${1:id})",
+"description": ""
+},
+" void thread_wait ": {
+"scope": "c",
+"prefix": "thread_wait",
+"body": "thread_wait(${1:id})",
+"description": ""
+},
