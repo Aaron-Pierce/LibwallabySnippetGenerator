@@ -1,4 +1,6 @@
-# Usage
+# Libwallaby Snippet Generator
+
+## Usage
 
 ```bash
 $ npm install
